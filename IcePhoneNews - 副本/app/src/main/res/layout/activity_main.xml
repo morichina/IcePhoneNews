@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/text_sharp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/avatar_pic"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/text_sharp"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:hint="输入手机号"
+            android:textSize="28sp"
+            android:inputType="phone"
+            tools:ignore="HardcodedText"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/text_sharp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/pass_word"/>
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/text_sharp"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/passWord"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:hint="输入密码"
+            android:textSize="28sp"
+            android:inputType="textPassword"
+            tools:ignore="LabelFor"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        android:text="登陆成功后你将成为冰峰新闻开发者的一分子"
+        android:textSize="19sp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="400dp"
+        android:text="登陆"
+        android:textSize="25sp"
+        tools:ignore="SmallSp"
+        android:background="@drawable/btn_shape"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="250dp"
+        android:text="注册"
+        android:textSize="25sp"
+        android:background="@drawable/btn_shape"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:text="登陆或注册代表您以同意《冰封实验室协议》"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>
